@@ -16,7 +16,7 @@ The important point is that each neuron from feature map corresponds to the regi
 
 The below diagram shows the Bi-linear CNN architecture briefly. It contains two CNNs that extract two feature maps, F_A and F_B. Then, F_A and F_B are reshaped into the shape of C*M and C*N matrices, respectively. The outer product of these two results in CxMxN matrices which are sum up in axis=0 to give a single MxN matrix. After these steps, MxN matrix is flattened into 1-D vector and input to the softmax layer.
 
-<img src="/assets/imgs/TY_Lin(2015)/arch.png" alt="Bi-linear CNN architecture">
+<img src="/assets/imgs/TY_Lin(2015)/arch.PNG" alt="Bi-linear CNN architecture">
 
 Later, I will add more detailed information, such as the backpropagation for outer product of matrices.
 
