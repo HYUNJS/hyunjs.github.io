@@ -7,11 +7,11 @@ tags:
 ---
 
 ## Introduction 
-Natural language inference (NLI) – understanding entailment and contradiction relations between sentences. e.g. positive/negative between two sentences
+Natural language inference (NLI) is the task judging entailment and contradiction relations between premise and hypothesis sentences. e.g. positive/negative between two sentences
 
-Visual Entailment (VE) – In this task, a natural image premise and a natural language hypothesis are given, and the goal is to judge whether the textual hypothesis can be confirmed based on the visual content in the image. Three labels are assigned: Entailment, Neutral, and Contradiction.
+Visual Entailment (VE) is similar to NLI, but the difference is the premise is image. Thus, the goal of this task is to judge whether the textual hypothesis can be confirmed based on the visual content in the image.
 
-The task proposed in this paper is judging the textual hypothesis based on the input of video and its subtitles. Therefore, this is more advanced multimodal task.
+The task proposed in this paper is to judge the textual hypothesis based on the combination of video and its subtitles. Therefore, this is more advanced multimodal task than VE.
 
 In this paper, a new large scale of dataset for this task is proposed and testing results of multimodal architecture utilizing existing models are given.
 
@@ -22,7 +22,6 @@ Deep understanding of videos is difficult due to following reasons:
   3. VE task which dataset is less sophisticated sentence as it only contains factual description that can be explicitly derived from the visual content in the image. On the other hand, VIOLIN mainly consists of implicit statements that cannot be solved without in-depth understanding of the video and text.
 
 Therefore, VIOLIN is designed specifically to evaluate a model’s multimodal reasoning skills.
-
 
 ## Overview of Dataset
 f(V,S,H) -> {0,1} where V is video clip consisting of a sequence of video frames $$ { \{ v_{i} \} }^{T}_{i=1} $$, paired with its aligned text $$ S = {\{ s_i, t^{(0)}_i, t^{(1)}_i \} }^n_{i=1} $$ ($$ s_i $$ is the subtitle within time span $$ (t^{(0)}_i \rightarrow t^{(1)}_i) $$ in the video) and a natural language statement $ H $ as the hypothesis aiming to describe the video clip.
@@ -80,7 +79,6 @@ $$ M^{all}_{stmt} = [H_{stmt}; M^V_{stmt}; M^{subtt}_{stmt}; H_{stmt} \odot M^V_
 In addition, the author evaluates the pre-trained model LXMERT that jointly learns multimodal features. In this model, the visual input is input rather than video. the middle frame of the corresponding video segment was used.
 
 <img src="/assets/imgs/J_Lin(2020)/5.png" alt="5.jpg">
-
 
 ## Evaluations
 Testing results show that adding visual features to the model only slightly improved the accuracy, while human predicts much better with the additional video input. Also, according to Table 6, statements of visual recognition do not improve with the additional video input, and the accuracy of human dynamics statements is even decreased. Therefore, we can conclude that the fusion of visual data and text data is not well achieved for the existing models. LXMERT is only using single frame rather than the video, so this point can be the consideration of low accuracy. 
