@@ -1,7 +1,7 @@
 ---
 title: "Edge Case: Nested and Mixed Lists"
 categories:
-  - Edge Case
+  - Edge_Case
 tags:
   - content
   - css
@@ -14,6 +14,15 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 
 * Lists within lists do not break the ordered list numbering order
 * Your list styles go deep enough.
+
+### practice
+blah blah blah 3 methods:
+  1. method 1
+      - detail
+  2. method 2
+      - detail
+  3. method 3
+      - detail
 
 ### Ordered -- Unordered -- Ordered
 

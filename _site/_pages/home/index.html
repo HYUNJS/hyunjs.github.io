@@ -63,7 +63,7 @@
 
 <!-- end _includes/seo.html -->
 
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="정석's Research Archive Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -100,6 +100,29 @@
 
 <!-- end custom head snippets -->
 
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$'] ],
+    processEscapes: true,
+  }
+});
+MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
   </head>
 
   <body class="layout--single">
@@ -405,7 +428,66 @@ permalink: /
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/computer%20vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/" rel="permalink">Bi-linear CNN models for fine-grained visual recognition
+        <a href="/statistics/wasserstein-distance/" rel="permalink">What is wassertein distance?
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  최대 1 분 소요
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Will update soon
+
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/multimodal-learning/VIOLIN-A-Large_Scale-Dataset-for-Video-and-Language-Inference/" rel="permalink">VIOLIN – A large Scale Dataset for video and language inference
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 분 소요
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Introduction
+Natural language inference (NLI) – understanding entailment and contradiction relations between sentences. e.g. positive/negative between two se...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/computer_vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/" rel="permalink">Bi-linear CNN models for fine-grained visual recognition
 </a>
       
     </h2>
@@ -434,7 +516,7 @@ Bilinear CNN utilizes the orderless descriptors which are more powerful to solve
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/edge%20case/edge-case-nested-and-mixed-lists/" rel="permalink">Edge Case: Nested and Mixed Lists
+        <a href="/edge_case/edge-case-nested-and-mixed-lists/" rel="permalink">Edge Case: Nested and Mixed Lists
 </a>
       
     </h2>
@@ -484,7 +566,66 @@ author_profile: true
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/computer%20vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/" rel="permalink">Bi-linear CNN models for fine-grained visual recognition
+        <a href="/statistics/wasserstein-distance/" rel="permalink">What is wassertein distance?
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  최대 1 분 소요
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Will update soon
+
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/multimodal-learning/VIOLIN-A-Large_Scale-Dataset-for-Video-and-Language-Inference/" rel="permalink">VIOLIN – A large Scale Dataset for video and language inference
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 분 소요
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Introduction
+Natural language inference (NLI) – understanding entailment and contradiction relations between sentences. e.g. positive/negative between two se...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/computer_vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/" rel="permalink">Bi-linear CNN models for fine-grained visual recognition
 </a>
       
     </h2>
@@ -513,7 +654,7 @@ Bilinear CNN utilizes the orderless descriptors which are more powerful to solve
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/edge%20case/edge-case-nested-and-mixed-lists/" rel="permalink">Edge Case: Nested and Mixed Lists
+        <a href="/edge_case/edge-case-nested-and-mixed-lists/" rel="permalink">Edge Case: Nested and Mixed Lists
 </a>
       
     </h2>

@@ -20,7 +20,7 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="정석's Research Archive">
 <meta property="og:title" content="Edge Case: Nested and Mixed Lists">
-<meta property="og:url" content="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/">
+<meta property="og:url" content="http://localhost:4000/edge_case/edge-case-nested-and-mixed-lists/">
 
 
   <meta property="og:description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that  ">
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/edge%20case/edge-case-nested-and-mixed-lists/">
+<link rel="canonical" href="http://localhost:4000/edge_case/edge-case-nested-and-mixed-lists/">
 
 
 
@@ -65,7 +65,7 @@
 
 <!-- end _includes/seo.html -->
 
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="정석's Research Archive Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -102,6 +102,29 @@
 
 <!-- end custom head snippets -->
 
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$'] ],
+    processEscapes: true,
+  }
+});
+MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
   </head>
 
   <body class="layout--single">
@@ -185,6 +208,26 @@
   <li>Lists within lists do not break the ordered list numbering order</li>
   <li>Your list styles go deep enough.</li>
 </ul>
+
+<h3 id="practice">practice</h3>
+<p>blah blah blah 3 methods:</p>
+<ol>
+  <li>method 1
+    <ul>
+      <li>detail</li>
+    </ul>
+  </li>
+  <li>method 2
+    <ul>
+      <li>detail</li>
+    </ul>
+  </li>
+  <li>method 3
+    <ul>
+      <li>detail</li>
+    </ul>
+  </li>
+</ol>
 
 <h3 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h3>
 
@@ -316,7 +359,7 @@
     
       
       
-      <a href="/categories/#edge-case" class="page__taxonomy-item" rel="tag">Edge Case</a>
+      <a href="/categories/#edge-case" class="page__taxonomy-item" rel="tag">Edge_Case</a>
     
     </span>
   </p>
@@ -335,7 +378,7 @@
       <a href="#" class="pagination--pager disabled">이전</a>
     
     
-      <a href="/computer%20vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/" class="pagination--pager" title="Bi-linear CNN models for fine-grained visual recognition
+      <a href="/computer_vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/" class="pagination--pager" title="Bi-linear CNN models for fine-grained visual recognition
 ">다음</a>
     
   </nav>

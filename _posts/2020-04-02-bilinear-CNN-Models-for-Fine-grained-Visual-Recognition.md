@@ -1,7 +1,7 @@
 ---
 title: "Bi-linear CNN models for fine-grained visual recognition"
 categories:
-  - Computer Vision
+  - Computer_Vision
 tags:
   - Fine-grained Visual recognition
   - CNN arch

@@ -20,7 +20,7 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="정석's Research Archive">
 <meta property="og:title" content="Bi-linear CNN models for fine-grained visual recognition">
-<meta property="og:url" content="http://localhost:4000/computer%20vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/">
+<meta property="og:url" content="http://localhost:4000/computer_vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/">
 
 
   <meta property="og:description" content="Key point Bilinear CNN utilizes the orderless descriptors which are more powerful to solve the texture classification than the orderful descriptors which store the additional spatial information.  ">
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/computer%20vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/">
+<link rel="canonical" href="http://localhost:4000/computer_vision/bilinear-CNN-Models-for-Fine-grained-Visual-Recognition/">
 
 
 
@@ -65,7 +65,7 @@
 
 <!-- end _includes/seo.html -->
 
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="정석's Research Archive Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -102,6 +102,29 @@
 
 <!-- end custom head snippets -->
 
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$'] ],
+    processEscapes: true,
+  }
+});
+MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
   </head>
 
   <body class="layout--single">
@@ -183,7 +206,7 @@
 <p>Bilinear CNN utilizes the orderless descriptors which are more powerful to solve the texture classification than the orderful descriptors which store the additional spatial information.</p>
 
 <h2 id="summary">Summary</h2>
-<p>Generally, CNN architecture for image classification is composed of convolutional layer and fully connected (FC) layer. At first, conv layer extracts the feature maps (CxHxW shape) from an image, where C is # channels, H and W are height and width of the extracted feature maps, respectively. After this, these feature maps are unrolled into 1-D vector then they are input to the FC layers, for example, 512x7x7 feature maps are flattened into 25088 neurons and mapped into 4096 feature vectors by FC layer.</p>
+<p>Generally, CNN architecture for image classification is composed of convolutional layer and fully connected (FC) layer. At first, conv layer extracts the feature maps (CxHxW shape) from an image, where C is # channels, and H and W are the height and width of the extracted feature maps, respectively. After this, these feature maps are unrolled into 1-D vector, and then they are input to the FC layers; for example, 512x7x7 feature maps are flattened into 25088 neurons and mapped into 4096 feature vectors by FC layer.</p>
 
 <p>The important point is that each neuron from feature map corresponds to the region of the image. Therefore, each neuron can be considered as the descriptor unit for the certain region of the image due to the subsampling process. Since each bit/unit stores spatial information additionally, it can be inferred that less fine-grained information are stored in the orderful descriptors due to the trade-off mechanism. On the other hand, in the fine-grained visual recognition (FGVR) task, the spatial information is not much required but more texture information is valuable. Fisher vector (FV), VLAD and O2P are the orderless descriptors and they outperform FC in FGVR task. Bi-linear CNN model is proposed to train in end-to-end manner to learn the orderless descriptors.</p>
 
@@ -242,7 +265,7 @@
     
       
       
-      <a href="/categories/#computer-vision" class="page__taxonomy-item" rel="tag">Computer Vision</a>
+      <a href="/categories/#computer-vision" class="page__taxonomy-item" rel="tag">Computer_Vision</a>
     
     </span>
   </p>
@@ -258,11 +281,12 @@
       
   <nav class="pagination">
     
-      <a href="/edge%20case/edge-case-nested-and-mixed-lists/" class="pagination--pager" title="Edge Case: Nested and Mixed Lists
+      <a href="/edge_case/edge-case-nested-and-mixed-lists/" class="pagination--pager" title="Edge Case: Nested and Mixed Lists
 ">이전</a>
     
     
-      <a href="#" class="pagination--pager disabled">다음</a>
+      <a href="/multimodal-learning/VIOLIN-A-Large_Scale-Dataset-for-Video-and-Language-Inference/" class="pagination--pager" title="VIOLIN – A large Scale Dataset for video and language inference
+">다음</a>
     
   </nav>
 
